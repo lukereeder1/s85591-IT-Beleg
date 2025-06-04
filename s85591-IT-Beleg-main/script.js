@@ -6,7 +6,7 @@ let progressData = {
     'mathematik': { currentQuestionIndex: 0, correctAnswers: 0 },
     'internettechnologien': { currentQuestionIndex: 0, correctAnswers: 0 },
     'allgemeines-wissen': { currentQuestionIndex: 0, correctAnswers: 0 },
-    'noten-lernen': { currentQuestionIndex: 0, correctAnswers: 0 } // ← hinzugefügt
+    'noten-lernen': { currentQuestionIndex: 0, correctAnswers: 0 } 
 };
 
 
