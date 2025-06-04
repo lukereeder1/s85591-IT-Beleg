@@ -15,7 +15,7 @@ Dies ist ein Lernprogramm, das Benutzern ermöglicht, Fragen aus verschiedenen K
 
 
 ## Projektübersicht
-Das Lernprogramm besteht aus einem Quiz-System, bei dem Benutzer aus drei Kategorien wählen können: Mathematik, Internettechnologien und Allgemeines Wissen. Jede Kategorie enthält eine Reihe von Fragen, und der Fortschritt des Benutzers wird gespeichert und kann später wieder aufgenommen werden. Das Programm bietet auch die Möglichkeit, externe Fragen zu laden.
+Das Lernprogramm besteht aus einem Quiz-System, bei dem Benutzer aus drei Kategorien wählen können: Mathematik, Internettechnologien und Allgemeines Wissen sowie Noten lernen.. Jede Kategorie enthält eine Reihe von Fragen, und der Fortschritt des Benutzers wird gespeichert und kann später wieder aufgenommen werden. Das Programm bietet auch die Möglichkeit, externe Fragen zu laden.
 
 ## Installation und Nutzung
 1. Klonen Sie das Repository:
@@ -61,6 +61,8 @@ In dieser Datei befindet sich die gesamte Logik der Anwendung. Sie enthält Funk
 >JavaScript: Für die Funktionalität der Webseite.
 > 
 >MathJax: Für die Darstellung von mathematischen Formeln.
+>
+> Vexflow: Zum darstellen der Noten.
 
 > [!IMPORTANT]
 > ## Mögliche Probleme
