@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernprogramm</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Roboto Schriftart -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+        };
+    </script>
+    <!-- VexFlow 3.0.9 -->
+    <script src="https://unpkg.com/vexflow@3.0.9/releases/vexflow-min.js"></script>
+</head>
+<body>
+    <div id="overlay">
+        <div class="overlay-content">
+            <h1>Lernprogramm</h1>
+
+            <div id="category-selection">
+                <button class="category-btn" onclick="selectCategory('mathematik')">Mathematik</button>
+                <button class="category-btn" onclick="selectCategory('internettechnologien')">Internettechnologien</button>
+                <button class="category-btn" onclick="selectCategory('allgemeines-wissen')">Allgemeines Wissen</button>
+                <button class="category-btn" onclick="loadExternalQuestion()">Externe Frage laden</button>
+                <button class="category-btn" onclick="selectCategory('noten-lernen')">Noten lernen</button>
+            </div>
+
+            <div id="question-container" style="display:none;">
+                <p id="question-text"></p>
+
+                <!-- Container für VexFlow -->
+                <div id="music-score" style="display: none;"></div>
+
+
+                <div id="answer-options"></div>
+
+                <div id="progress">
+                    <div id="progress-bar" style="width: 0%;"></div>
+                </div>
+
+                <button onclick="goToMainMenu()">Zum Hauptmenü</button>
+                <button onclick="skipQuestion()">Überspringen</button>
+            </div>
+
+            <div id="statistics-container" style="display:none;">
+                <h2>Statistik</h2>
+                <p id="statistics-text"></p>
+                <button onclick="restartQuiz()">Erneut starten</button>
+            </div>
+        </div>
+    </div>
+
+    <button id="reset-btn" onclick="resetAll()">Alles zurücksetzen</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

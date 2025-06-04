@@ -1,0 +1,13 @@
+{
+  "noten": [
+    { "question": "C4", "options": ["C", "D", "E", "A"], "answer": "C" },
+    { "question": "D4", "options": ["D", "C", "F", "G"], "answer": "D" },
+    { "question": "E4", "options": ["E", "D", "G", "H"], "answer": "E" },
+    { "question": "F4", "options": ["F", "G", "A", "E"], "answer": "F" },
+    { "question": "(C4 E4 G4)", "options": ["C", "H", "F", "D"], "answer": "C" }
+  ]
+}
+
+
+
+

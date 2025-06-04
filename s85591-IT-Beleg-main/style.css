@@ -1,0 +1,178 @@
+/* Basis-Stil für den gesamten Body */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ececec, #f5f5f5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Stil für das Overlay */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Stil für den Inhalt des Overlays */
+.overlay-content {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Stil für die Überschrift */
+h1 {
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* Stil für die Kategorie- und Antwortbuttons */
+.category-btn, .answer-btn {
+    display: inline-block;
+    width: 45%;
+    padding: 15px;
+    margin: 15px 2.5%;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover-Effekt für die Buttons */
+.category-btn:hover, .answer-btn:hover {
+    background: linear-gradient(135deg, #5a0eb2, #1f6be4);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Stil für korrekte Antworten */
+.answer-btn.correct {
+    background: linear-gradient(135deg, #1dd1a1, #10ac84);
+    animation: correctBlink 0.5s;
+}
+
+/* Stil für falsche Antworten */
+.answer-btn.wrong {
+    background: linear-gradient(135deg, #ff6b6b, #ee5253);
+    animation: wrongBlink 0.5s;
+}
+
+/* Animation für korrekte Antworten */
+@keyframes correctBlink {
+    0%, 100% { background: linear-gradient(135deg, #1dd1a1, #10ac84); }
+    50% { background: linear-gradient(135deg, #48e2c2, #1dd1a1); }
+}
+
+/* Animation für falsche Antworten */
+@keyframes wrongBlink {
+    0%, 100% { background: linear-gradient(135deg, #ff6b6b, #ee5253); }
+    50% { background: linear-gradient(135deg, #ff8989, #ff6b6b); }
+}
+
+/* Stil für die Fortschrittsanzeige */
+#progress {
+    width: 80%;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto; 
+    text-align: center;
+}
+
+/* Stil für den Fortschrittsbalken */
+#progress-bar {
+    width: 0;
+    height: 20px;
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    transition: width 0.3s ease;
+}
+
+/* Stil für den Statistik-Container */
+#statistics-container {
+    text-align: center;
+}
+
+/* Stil für den Statistik-Text */
+#statistics-text {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #fff;
+}
+
+/* Basisstil für alle Buttons */
+button {
+    background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover-Effekt für alle Buttons */
+button:hover {
+    background: linear-gradient(135deg, #00c1e5, #316fbc);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Anpassungen für kleinere Bildschirme */
+@media (max-width: 768px) {
+    .overlay-content {
+        width: 95%;
+    }
+
+    .category-btn, .answer-btn {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay-content {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .category-btn, .answer-btn {
+        font-size: 1em;
+    }
+}
+
+/* Stil für den Zurücksetzungsbutton */
+#reset-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    z-index: 2000;
+}
+
+/* Hover-Effekt für den Zurücksetzungsbutton */
+#reset-btn:hover {
+    background: linear-gradient(135deg, #d62c1a, #a72619);
+}
